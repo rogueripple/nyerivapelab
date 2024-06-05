@@ -11,9 +11,7 @@ p.one {
 text-align: center;
 background-color: rgb(150,150,200);
 }
-.header-content{
-    word-spacing: 2em;
-}
+
 .image-row {
     display: flex; /* Display as flex row */
     justify-content: space-between; /* Space out evenly */
