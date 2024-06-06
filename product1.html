@@ -1,1 +1,116 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .product-page {
+            background: #fff;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-page img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .product-description {
+            flex: 1;
+            padding: 20px;
+        }
+        .product-description h2 {
+            margin: 0 0 10px;
+            font-size: 28px;
+            color: #333;
+        }
+        .product-description p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .product-price {
+            flex: 1;
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .product-price h3 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .product-price p {
+            font-size: 20px;
+            color: #555;
+        }
+        .product-price del {
+            color: #999;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .more-products {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .more-products a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .more-products a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-page">
+            <img src="homepagepics/kk-energy-fruit-fusion.jpg" alt="kk-energy-fruit-fusion">
+            <div class="product-details">
+                <div class="product-description">
+                    <h2>KK Energy Fruit Fusion</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula augue eget nunc elementum, vel tincidunt lacus bibendum. Nulla facilisi. Phasellus vel ligula in arcu fermentum venenatis. Cras vel bibendum sapien. Suspendisse potenti. Sed fringilla urna ut bibendum dignissim. Aliquam erat volutpat.</p>
+                </div>
+                <div class="product-price">
+                    <h3>Special Price</h3>
+                    <p><del>ksh2800</del> ksh2680</p>
+                    <a href="https://wa.link/gtyo7z" class="btn">Order Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="more-products">
+            <p>View more products: <a href="vape/vape.html"><i>more vape products</i></a></p>
+        </div>
+    </div>
+</body>
+</html>
