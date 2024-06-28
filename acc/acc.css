@@ -22,16 +22,11 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
 h1 {
     text-align: center;
     color: #333;
 }
+
 
 .product-card {
     background: white;
