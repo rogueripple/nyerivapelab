@@ -33,13 +33,6 @@ h1 {
     color: #333;
 }
 
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
 .product-card {
     background: white;
     border-radius: 10px;
