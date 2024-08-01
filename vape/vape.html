@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<tittle> VAPE Products</tittle>
+<tittle><button onclick="goBack()">Go Back</button></tittle>
 <style>
 	 header {
             padding: 20px 0;
@@ -79,6 +79,38 @@ text-decoration: underline;}
 a:active {
 color: darkcyan;}
 h1 {color: rgb(100,255,150);}
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(45deg, #4CAF50, #2e7d32);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            outline: none;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #2e7d32, #4CAF50);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(1px);
+        }
+	<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+	
 </style>
 </head>
 <body>
