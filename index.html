@@ -10,6 +10,27 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PS404Z9EG3');
+
+	document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('ageModal');
+    var content = document.getElementById('content');
+    var acceptButton = document.getElementById('acceptButton');
+    var declineButton = document.getElementById('declineButton');
+
+    // Show the modal when the page loads
+    modal.style.display = 'block';
+
+    // When the user clicks "I am 18 or older", hide the modal and show the content
+    acceptButton.onclick = function() {
+        modal.style.display = 'none';
+        content.style.display = 'block';
+    };
+
+    // When the user clicks "I am under 18", redirect them to another page
+    declineButton.onclick = function() {
+        window.location.href = 'https://www.google.com';
+    };
+});
 </script>
 	<style>
 		      .bestsellers {
@@ -144,6 +165,14 @@ SAME DAY DELIVERIES</center></tittle>
     </div>
 
 <body>
+	<div id="ageModal" class="modal">
+    <div class="modal-content">
+        <h2>Age Verification</h2>
+        <p>You must be 18 or older to enter this site.</p>
+        <button id="acceptButton">I am 18 or older</button>
+        <button id="declineButton">I am under 18</button>
+    </div>
+</div>
 <header>
     <header>
         <div class="header-content">
