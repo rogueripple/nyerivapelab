@@ -1,6 +1,6 @@
-  gtag('config', 'G-PS404Z9EG3');
-</script>
+
 	<script>
 function goBack() {
     window.history.back();
 }
+</script>
