@@ -1,39 +1,36 @@
 <!Doctype html>
-
 <html>
 <head>
-	<script>
-	<!-- Google tag (gtag.js) -->
- async src="https://www.googletagmanager.com/gtag/js?id=G-PS404Z9EG3"
-		
- async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328015224943433"
-     crossorigin="anonymous"
-		
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS404Z9EG3"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328015224943433" crossorigin="anonymous"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-PS404Z9EG3');
 
-  gtag('config', 'G-PS404Z9EG3');
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('ageModal');
+            var content = document.getElementById('content');
+            var acceptButton = document.getElementById('acceptButton');
+            var declineButton = document.getElementById('declineButton');
 
-document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('ageModal');
-    var content = document.getElementById('content');
-    var acceptButton = document.getElementById('acceptButton');
-    var declineButton = document.getElementById('declineButton');
+            // When the user clicks "I am 18 or older", hide the modal and show the content
+            acceptButton.onclick = function() {
+                modal.style.display = 'none';
+                content.style.display = 'block';
+            };
 
-    // When the user clicks "I am 18 or older", hide the modal and show the content
-    acceptButton.onclick = function() {
-        modal.style.display = 'none';
-        content.style.display = 'block';
-    };
+            // When the user clicks "I am under 18", redirect them to another page
+            declineButton.onclick = function() {
+                window.location.href = 'https://www.google.com';
+            };
+        });
+    </script>
 
-    // When the user clicks "I am under 18", redirect them to another page
-    declineButton.onclick = function() {
-        window.location.href = 'https://www.google.com';
-    };
-});
-
-</script>
 	<style>
 		      .bestsellers {
             font-size: 2em;
